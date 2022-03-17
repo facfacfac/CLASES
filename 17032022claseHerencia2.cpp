@@ -82,6 +82,7 @@ int main(){
   // Construir un alumno por defecto y luego darle valores.
   Alumno* ptrAlumno; // Es un puntero que apunta a un objeto alumno.
   ptrAlumno = new Alumno("ptrNombre", "ptrDNI", "ptrGrado", 9);
+  // La utilidad de esto es, por ejemplo, si sabemos que vamos a tener 5 alumnos podemos reservar sus espacios desde el principio.
 
   cout << "Persona:" << endl;
   miPersona.imprimir();
