@@ -38,6 +38,27 @@ class Persona{
 };
 
 // Vamos a hacer una clase heredada. Todos los alumnos son personas, por lo tanto, extendemos de persona.
+/* Explicando lo que significa que un objeto hijo herede de forma publica, privada o protegida:
+Cuando definimos los atributos y métodos de una clase, estos pueden ser:
+  Public: se puede acceder desde cualquier clase.
+  Protected: solo accesible desde la clase y sus descendientes.
+  Private: solo accesible desde la clase donde se define.
+    // Si ponemos los atributos en protegido en vez de privado, podrán ser utilizados directamente por las clases hijas; por lo tanto, normalmente nos conviene más.
+Cuando definimos la herencia de una clase:
+  Public:
+    Lo privado sigue siendo privado (no se puede acceder).
+    Lo protegido sigue siendo protegido.
+    Lo publico sigue siendo publico.
+  Protected:
+    Lo privado sigue siendo privado.
+    Lo protegido sigue siendo protegido.
+    Lo público pasa a ser protegido.
+  Private:
+    Lo privado sigue siendo privado.
+    Lo protegido pasa a ser privado.
+    Lo publico pasa a ser privado.
+*/
+
 class Alumno : public Persona{ // Todo lo que la clase persona va a ser publico para la subclase alumno.
   private:
     string clase;
